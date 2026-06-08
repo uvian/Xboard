@@ -105,7 +105,8 @@ class ServerService
                 'id',
                 'uuid',
                 'speed_limit',
-                'device_limit'
+                'device_limit',
+                'outbound_tag'
             ])
             ->get();
         return HookManager::filter('server.users.get', $users, $node);
